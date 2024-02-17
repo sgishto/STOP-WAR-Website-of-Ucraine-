@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGJISTROHU DHE JEP NDIHMEN TENDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleform1.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <div id="page-logo">
+            <a href="index.html">UKRAINA SOT</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://news.un.org/en/focus/ukraine?gclid=EAIaIQobChMIs4Tu_rLp9wIVB4jVCh1IAARvEAAYASAAEgKjS_D_BwE" target="_blank">LAJME</a></li>
+                <li><a href="https://usukraine.org/" target="_blank">KAUZAT</a></li>
+                <li><a href="form1.html" target="_blank">KONTAKTO TANI</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="form" action="/">
+            <h1> Të dhënat për regjistrim</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Sorilda Gishto">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="username"type="text" placeholder="sorildagishto@gmail.com">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+                <div class="error">
+                </div>
+            </div>
+            <div class="input-control">
+                <label for="password">Konfirmo Passwordin</label>
+                <input id="password2" name="password" type="password">
+                <div class="error">
+                </div>
+            </div>
+            <section>
+                <h2>Të dhëna të tjera</h2>
+                <ul>
+                    <li>
+                        <label for="userage">Mosha</label>
+                        <input type="number" step="1" name="user-age" id="userage" required min="18" max="100">
+                    </li>
+                    <li>
+                        <label for="userbirthdate">Datëlindja</label>
+                        <input type="date" name="user-birthdate" id="userbirthdate" required min="2003-01-01" max="2100-01-01">
+                    </li>
+                    <li>
+                        <label for="favorite-color">Keni dëgjuar më parë për luftën Ukrainë-Rusi?</label>
+                        <select id="favorite-color" name="fav-color">
+                            <option value="blue">Kam marë informacionet e nevojshme.</option>
+                            <option value="cyan">Jam pak i informuar mbi gjendjen e Ukrainës.</option>
+                            <option value="red">Nuk kam asnjë informacion per luften Ukraine-Rusi.</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <label for="usermessage">Mesazhet tuaja suportuese</label>
+                <textarea id="usermessage" name="user-message" required rows="8"></textarea>
+            </section>
+            <section>
+                <h2>Si mund të verifikojmë profilin tuaj?</h2>
+                <ul>
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify-text-message" value="text-message" required>
+                        <label for="verify-text-message"> Me anë të një mesazhi(SMS) </label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify"id="verify-phone"value="phone" required>
+                        <label for="verify-phone">Me anë të një telefonate </label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio"name="verify"id="verify-email"value="email" required>
+                        <label for="verify-email"> Me anë të një email-i </label>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Si mund të kontaktojmë me ju? </h2>
+                <ul>
+                    <li class="form-control-inline">
+                        <input type="checkbox" id="contact-email" name="contact" value="email">
+                        <label for="contact-email">Me anë të një emaili</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="checkbox" id="contact-phone" name="contact" value="phone">
+                        <label for="contact-phone">Me anë të një telefonate</label>
+                    </l>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <div class="form-control-inline">
+                    <input type="checkbox" id="agree-terms" name="terms">
+                    <label for="agree-terms">Pranoj kushtet e mësiperme.</label>
+                </div>
+            </section>
+            <section>
+                <h2>Nëse dëshironi të dërgoni punime tuaja në mbështetje të popullit Ukrainës,klikoni më poshte.</h2>
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                    <input type="file" name="myFile" class="drop-zone__input">
+                  </div>
+                
+                  <script src="drag.js"></script>
+                <div class="buttons">
+                <button type="submit">Dërgo</button>
+                <button type="reset" >Anullo</button>
+                </div>
+            </section>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
